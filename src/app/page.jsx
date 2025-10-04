@@ -10,25 +10,28 @@ import OurInvestorRanking from "./../components/home/OurInvestorRanking";
 // import LightingComponentExLarge from "../components/common/LightingComponentExLarge";
 import AboutCompanyHome from "../components/about/index";
 import WhyChoose from "../components/common/WhyChoose";
+import LivePricesMarquee from "../components/home/LivePricesMarquee";
 
 const Home = () => {
-   return (
-      <>
-         <HomeTopSlider />
-         <div className="relative isolate overflow-hidden">
-            {/* <LightingComponentExLarge /> */}
+  return (
+    <>
+      <HomeTopSlider />
+      <LivePricesMarquee />
 
-            <AboutCompanyHome />
-            <MerchantManagement />
-            <InvestmentPlan />
-            <WhyChoose />
-            <OurPriorityCustomers />
-            <PaymentWeAccept />
-            <FAQ />
-            <OurInvestorRanking />
-         </div>
-      </>
-   );
+      <div className="relative isolate overflow-hidden">
+        {/* <LightingComponentExLarge /> */}
+
+        <AboutCompanyHome />
+        <MerchantManagement />
+        <InvestmentPlan />
+        <WhyChoose />
+        <OurPriorityCustomers />
+        <PaymentWeAccept />
+        <FAQ />
+        <OurInvestorRanking />
+      </div>
+    </>
+  );
 };
 
 export default Home;

@@ -68,8 +68,8 @@ const TopInvestors = () => {
                   </small>
 
                   <div className="flex flex-col items-center justify-center">
-                    <p className="font-semibold text-lg text-white">
-                      User ID: {investor?.customerInfo?.user_id || "N/A"}
+                    <p className="font-light">
+                      User ID: {investor?.customerInfo?.username || "N/A"}
                     </p>
                     <p className="text-sm text-center bg-blue-800 px-3 py-2 rounded-full mt-2">
                       Investment - ${investor?.investment}
