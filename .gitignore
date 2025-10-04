@@ -12,7 +12,10 @@
 .phpunit.result.cache
 Homestead.json
 /.next
+# ignore Next.js build output and any static export output
 /.out
+# some tools write to `out/` (no dot) — ignore that too
+/out
 Homestead.yaml
 auth.json
 npm-debug.log
