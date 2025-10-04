@@ -145,14 +145,9 @@ const OurInvestorRanking = () => {
           investorData.investors.map((investor, index) => (
             <div
               key={index}
-              className="flex flex-col justify-center items-center gap-2 p-4 bg-dark-blue2 rounded-lg shadow-blue-700 ring-0 hover:ring-1 text-white"
+              className="text-center bg-dark-primary2 p-3 rounded-lg text-white font-semibold"
             >
-              <p className="text-base font-semibold">
-                User ID:{" "}
-                {investor?.customerInfo?.user_id ||
-                  investor?.customerInfo?.id ||
-                  investor?.id}
-              </p>
+              User ID: {investor.user_id || investor.id}
             </div>
           ))}
       </section>

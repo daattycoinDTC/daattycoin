@@ -125,6 +125,12 @@ const TopHeader = () => {
               </Link>
             </li>
             <li>
+              <Link href="/white-paper">
+                <BtnPrimaryOutline>White Paper</BtnPrimaryOutline>
+              </Link>
+            </li>
+
+            <li>
               <BtnLanguage width={"w-16"} />
             </li>
           </ul>
@@ -176,9 +182,7 @@ const TopHeader = () => {
               onClick={toggleNav}
               href="/registration"
               className={`px-4 py-2.5 ${
-                isActive("/registration")
-                  ? "btn_primary_active"
-                  : "btn_primary"
+                isActive("/registration") ? "btn_primary_active" : "btn_primary"
               }`}
             >
               Registration
@@ -192,10 +196,7 @@ const TopHeader = () => {
 
       <DialogModal open={isModalOpen} setOpen={setIsModalOpen}>
         {isLogin ? (
-          <Login
-            onClick={modalOpen}
-            forgotPasswork={() => setIsLogin(false)}
-          />
+          <Login onClick={modalOpen} forgotPasswork={() => setIsLogin(false)} />
         ) : (
           <ForgotPassword />
         )}
